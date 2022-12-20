@@ -21,6 +21,8 @@ import static com.fasterxml.jackson.annotation.JsonProperty.Access.WRITE_ONLY;
 
 @Entity
 @Table(name = "tb_customer")
+@Getter
+@Setter
 public class Customer implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -84,54 +86,6 @@ public class Customer implements Serializable {
         this.password = password;
         this.user = user;
         this.isActive = isActive;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getCustomerName() {
-        return customerName;
-    }
-
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
-    }
-
-    public String getDocumentNumber() {
-        return documentNumber;
-    }
-
-    public void setDocumentNumber(String documentNumber) {
-        this.documentNumber = documentNumber;
-    }
-
-    public String getCustomerStatus() {
-        return customerStatus;
-    }
-
-    public void setCustomerStatus(String customerStatus) {
-        this.customerStatus = customerStatus;
-    }
-
-    public String getCreditScore() {
-        return creditScore;
-    }
-
-    public void setCreditScore(String creditScore) {
-        this.creditScore = creditScore;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public UserDto getUser() {
