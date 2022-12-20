@@ -1,0 +1,83 @@
+INSERT INTO tb_users(email,IS_ACTIVE, password) VALUES('gabriela@gmail.com',1,'$2a$10$8rMBerbI5zBuEJbHufeQP.HFrhCPD9h/k6uqeaxZOJvz14qoB.IbO')
+INSERT INTO tb_users(email,IS_ACTIVE, password) VALUES('felipe@gmail.com',1,'$2a$10$DqIJGJ/WzXM1BnhErIVC6ugLl8Nq99W8mgZZrnGXRBop3YAvBmqRO')
+INSERT INTO tb_users(email,IS_ACTIVE, password) VALUES('beatriz@gmail.com',1,'$2a$10$K2aO2aQKZayXkOymJ2EAC.2nYfE6pIdxzT6FsaJkX8rR/4Tm.CEyS')
+INSERT INTO tb_users(email,IS_ACTIVE, password) VALUES('gustavo@gmail.com',1,'$2a$10$0i/..FJIThKZ3k0esRl1SukbrpxnyElyULpNiqLMgYn7kIn0ga1jK')
+INSERT INTO tb_users(email,IS_ACTIVE, password) VALUES('lucibaa@gmail.com',1,'$2a$10$WloYCPb1dxESOpjUxPtSkegx7CDg3J9xAaDxrlLWOhkS4fQzm6Rmi')
+INSERT INTO tb_users(email,IS_ACTIVE, password) VALUES('random@gmail.com',1,'$2a$10$wggm49nZBFHQ91ArIw0B3O8r58w893cHOkaCbMv1Uvv28V.Im6ede')
+
+INSERT INTO tb_customer(CREDIT_SCORE, CUSTOMER_NAME, CUSTOMER_STATUS, CUSTOMER_TYPE, DOCUMENT_NUMBER, IS_ACTIVE, PASSWORD, USER_ID) VALUES ('perfect', 'Joe', 'online', '1','44397021188', 1, '$2a$10$vps8cj5vAgshfts3ETw2fe4G ', 1)
+INSERT INTO tb_customer(CREDIT_SCORE, CUSTOMER_NAME, CUSTOMER_STATUS, CUSTOMER_TYPE, DOCUMENT_NUMBER, IS_ACTIVE, PASSWORD, USER_ID) VALUES ('low', 'Vitor', 'offline', '1', '53532000238', 1,'$2a$10$0qJzDwg5Z12kQ1iKomzou.WXiij7jQwsXf7UYopl/.YwhIcC0pfxy ', 2)
+INSERT INTO tb_customer(CREDIT_SCORE, CUSTOMER_NAME, CUSTOMER_STATUS, CUSTOMER_TYPE, DOCUMENT_NUMBER, IS_ACTIVE, PASSWORD, USER_ID) VALUES ('high', 'Gabriel', 'inactive', '1', '87962485580', 1, '$2a$10$3RrzyOIYYxM4Hv67Q.Y3zuxhsTCYpv.tNZZkB9BR24agx2lwH8fJ6', 3)
+INSERT INTO tb_customer(CREDIT_SCORE, CUSTOMER_NAME, CUSTOMER_STATUS, CUSTOMER_TYPE, DOCUMENT_NUMBER, IS_ACTIVE, PASSWORD, USER_ID) VALUES ('very high', 'Mariana', 'offline', '1', '36572658707', 1, '$2a$10$eLs8qkjA4s1AR2ShrHmduOcC.gfi0qGzTnGmwB0Mfa.aYBg6DURJO', 4)
+INSERT INTO tb_customer(CREDIT_SCORE, CUSTOMER_NAME, CUSTOMER_STATUS, CUSTOMER_TYPE, DOCUMENT_NUMBER, IS_ACTIVE, PASSWORD, USER_ID) VALUES ('very low', 'Vitória', 'inactive', '1', '43532606267', 1,'$2a$10$ZpaN1TQ5UqQd.jKpr2d8fusKrch8hYUzDf7sheuGHGGIVVojct5q.', 5)
+INSERT INTO tb_customer(CREDIT_SCORE, CUSTOMER_NAME, CUSTOMER_STATUS, CUSTOMER_TYPE, DOCUMENT_NUMBER, IS_ACTIVE, PASSWORD, USER_ID) VALUES ('very low', 'Cida', 'online', '1', '245678', 1, '$2a$10$.X6aGJIG1cWlVtDdufzUKO7tE7SqTZn8OSjY7rM4jWflPhXMH5IA2 ', 6)
+
+INSERT INTO tb_role(authority) VALUES('1')
+INSERT INTO tb_role(authority) VALUES('2')
+
+INSERT INTO tb_users_roles(user_id,role_id) VALUES(1,1)
+INSERT INTO tb_users_roles(user_id,role_id) VALUES(1,2)
+INSERT INTO tb_users_roles(user_id,role_id) VALUES(2,2)
+INSERT INTO tb_users_roles(user_id,role_id) VALUES(3,2)
+INSERT INTO tb_users_roles(user_id,role_id) VALUES(4,2)
+INSERT INTO tb_users_roles(user_id,role_id) VALUES(5,2)
+INSERT INTO tb_users_roles(user_id,role_id) VALUES(6,2)
+
+INSERT INTO tb_timeperiod(END_DATE_TIME, RETIRE_DATE_TIME, START_DATE_TIME) VALUES (STR_TO_DATE('2023/10/04 13:36:39', '%Y/%m/%d %H:%i:%s'), STR_TO_DATE('2022/12/20 14:37:05', '%Y/%m/%d %H:%i:%s'), STR_TO_DATE('2022/10/19 14:37:16', '%Y/%m/%d %H:%i:%s'))
+INSERT INTO tb_timeperiod(END_DATE_TIME, RETIRE_DATE_TIME, START_DATE_TIME) VALUES (STR_TO_DATE('2023/10/08 11:36:39', '%Y/%m/%d %H:%i:%s'), STR_TO_DATE('2022/12/25 11:37:05', '%Y/%m/%d %H:%i:%s'), STR_TO_DATE('2022/10/20 16:33:17', '%Y/%m/%d %H:%i:%s'))
+
+INSERT INTO tb_address (ADDRESS_TYPE, COMPLEMENT, COUNTRY, HOUSE_NUMBER, NEIGHBORHOOD, STREET, ZIP_CODE, CLIENT_ID) VALUES ('1', 'Apt.', 'Brazil', 205, 'Las Noches', 'Rua Chungus', 03249608, 1)
+INSERT INTO tb_address (ADDRESS_TYPE, COMPLEMENT, COUNTRY, HOUSE_NUMBER, NEIGHBORHOOD, STREET, ZIP_CODE, CLIENT_ID) VALUES ('2', 'Apt.', 'Brazil', 104, 'Nova Petrópolis', 'Rua Bogus', 04099708, 2)
+INSERT INTO tb_address (ADDRESS_TYPE, COMPLEMENT, COUNTRY, HOUSE_NUMBER, NEIGHBORHOOD, STREET, ZIP_CODE, CLIENT_ID) VALUES ('3', 'Apt.', 'Brazil', 50, 'São Paulo(Centro)', 'Rua Dom Pedro', 12496708, 3)
+INSERT INTO tb_address (ADDRESS_TYPE, COMPLEMENT, COUNTRY, HOUSE_NUMBER, NEIGHBORHOOD, STREET, ZIP_CODE, CLIENT_ID) VALUES ('1', 'House', 'Brazil', 76, 'Bairro do Zé', 'Rua do Zé', 3948907, 4)
+INSERT INTO tb_address (ADDRESS_TYPE, COMPLEMENT, COUNTRY, HOUSE_NUMBER, NEIGHBORHOOD, STREET, ZIP_CODE, CLIENT_ID) VALUES ('2', 'House', 'Brazil', 71, 'Barra Funda', 'Rua da Maria', 309482, 5)
+INSERT INTO tb_address (ADDRESS_TYPE, COMPLEMENT, COUNTRY, HOUSE_NUMBER, NEIGHBORHOOD, STREET, ZIP_CODE, CLIENT_ID) VALUES ('3', 'House', 'Brazil', 40, 'Demarchi', 'Rua do Borges ', 07866540, 6)
+
+INSERT INTO tb_order (INSTANT, IS_ACTIVE, CUSTOMER_ID, DELIVERY_ADDRESS_ID) VALUES (STR_TO_DATE('2022/10/08 14:09:03', '%Y/%m/%d %H:%i:%s'), 1, '1', '1')
+INSERT INTO tb_order (INSTANT, IS_ACTIVE, CUSTOMER_ID, DELIVERY_ADDRESS_ID) VALUES (STR_TO_DATE('2022/10/18 14:09:03', '%Y/%m/%d %H:%i:%s'), 1, '2', '2')
+INSERT INTO tb_order (INSTANT, IS_ACTIVE,CUSTOMER_ID, DELIVERY_ADDRESS_ID) VALUES (STR_TO_DATE('2022/04/13 16:11:23', '%Y/%m/%d %H:%i:%s'), 1, '3', '3')
+INSERT INTO tb_order (INSTANT, IS_ACTIVE,CUSTOMER_ID, DELIVERY_ADDRESS_ID) VALUES (STR_TO_DATE('2022/03/14 17:08:21', '%Y/%m/%d %H:%i:%s'), 1, '4', '4')
+INSERT INTO tb_order (INSTANT, IS_ACTIVE,CUSTOMER_ID, DELIVERY_ADDRESS_ID) VALUES (STR_TO_DATE('2022/02/15 11:07:22', '%Y/%m/%d %H:%i:%s'), 1, '5', '5')
+INSERT INTO tb_order (INSTANT, IS_ACTIVE,CUSTOMER_ID, DELIVERY_ADDRESS_ID) VALUES (STR_TO_DATE('2022/01/16 10:06:25', '%Y/%m/%d %H:%i:%s'), 1, '6', '6')
+
+INSERT INTO tb_bankslip_payment(PAYMENT_STATE, ORDER_ID, DUE_DATE, START_DATE) VALUES ('1', '1', STR_TO_DATE('2022/11/01 14:32:19', '%Y/%m/%d %H:%i:%s'), STR_TO_DATE('2022/11/04 14:32:23', '%Y/%m/%d %H:%i:%s'))
+
+INSERT INTO tb_creditcard_payment(PAYMENT_STATE, ORDER_ID, INSTALLMENTS) VALUES ('1', '3', '1')
+
+INSERT INTO tb_characteristic (CHARACTERISTIC_TYPE,IS_ACTIVE, NAME, VALUE_TYPE, VALID_FOR_ID) VALUES ('1', 1, 'User Item', 'Full', 1)
+INSERT INTO tb_characteristic (CHARACTERISTIC_TYPE,IS_ACTIVE, NAME, VALUE_TYPE, VALID_FOR_ID) VALUES ('2', 1, 'Internal Item', 'Full', 2)
+INSERT INTO tb_characteristic (CHARACTERISTIC_TYPE,IS_ACTIVE, NAME, VALUE_TYPE, VALID_FOR_ID) VALUES ('3', 1, 'Internal Item', 'Offer', 2)
+INSERT INTO tb_characteristic (CHARACTERISTIC_TYPE,IS_ACTIVE, NAME, VALUE_TYPE, VALID_FOR_ID) VALUES ('3', 1, 'User Item', 'Full', 1)
+INSERT INTO tb_characteristic (CHARACTERISTIC_TYPE,IS_ACTIVE, NAME, VALUE_TYPE, VALID_FOR_ID) VALUES ('2', 1, 'Internal Item', 'Offer', 2)
+INSERT INTO tb_characteristic (CHARACTERISTIC_TYPE,IS_ACTIVE, NAME, VALUE_TYPE, VALID_FOR_ID) VALUES ('1', 1, 'User Itemo', 'Offer', 1)
+INSERT INTO tb_characteristic (CHARACTERISTIC_TYPE,IS_ACTIVE, NAME, VALUE_TYPE, VALID_FOR_ID) VALUES ('2', 1, 'User Itema', 'Offer', 2)
+
+INSERT INTO tb_productoffering (IS_ACTIVE, NAME, POSTATE, SELL_INDICATOR, VALID_FOR_ID) VALUES (1, 'Pre-paid 20GB', '1', 0, 1)
+INSERT INTO tb_productoffering (IS_ACTIVE, NAME, POSTATE, SELL_INDICATOR, VALID_FOR_ID) VALUES (1, 'Post-paid Iphone', '2', 1, 1)
+INSERT INTO tb_productoffering (IS_ACTIVE, NAME, POSTATE, SELL_INDICATOR, VALID_FOR_ID) VALUES (1, 'Pre-paid 500gb', '3', 1, 2)
+INSERT INTO tb_productoffering (IS_ACTIVE, NAME, POSTATE, SELL_INDICATOR, VALID_FOR_ID) VALUES (1, 'Membership', '1', 0, 1)
+INSERT INTO tb_productoffering (IS_ACTIVE, NAME, POSTATE, SELL_INDICATOR, VALID_FOR_ID) VALUES (1, 'Additional credits', '2', 1, 1)
+INSERT INTO tb_productoffering (IS_ACTIVE, NAME, POSTATE, SELL_INDICATOR, VALID_FOR_ID) VALUES (1, 'Additional credits', '3', 1, 2)
+INSERT INTO tb_productoffering (IS_ACTIVE, NAME, POSTATE, SELL_INDICATOR, VALID_FOR_ID) VALUES (1, 'Bonus credits', '1', 1, 1)
+
+INSERT INTO tb_characteristic_productoffering (CHARACTERISTIC_ID, PRODUCT_OFFERING_ID) VALUES ('1', '1')
+INSERT INTO tb_characteristic_productoffering (CHARACTERISTIC_ID, PRODUCT_OFFERING_ID) VALUES ('2', '2')
+INSERT INTO tb_characteristic_productoffering (CHARACTERISTIC_ID, PRODUCT_OFFERING_ID) VALUES ('3', '3')
+INSERT INTO tb_characteristic_productoffering (CHARACTERISTIC_ID, PRODUCT_OFFERING_ID) VALUES ('4', '4')
+INSERT INTO tb_characteristic_productoffering (CHARACTERISTIC_ID, PRODUCT_OFFERING_ID) VALUES ('5', '5')
+INSERT INTO tb_characteristic_productoffering (CHARACTERISTIC_ID, PRODUCT_OFFERING_ID) VALUES ('6', '6')
+INSERT INTO tb_characteristic_productoffering (CHARACTERISTIC_ID, PRODUCT_OFFERING_ID) VALUES ('7', '7')
+
+INSERT INTO tb_orderitem (DISCOUNT, QUANTITY, UNIT_PRICE, PRODUCT_OFFERING_ID, ORDER_ID) VALUES ('50', '1', '100', '1', '1')
+INSERT INTO tb_orderitem (DISCOUNT, QUANTITY, UNIT_PRICE, PRODUCT_OFFERING_ID, ORDER_ID) VALUES ('25', '2', '50', '2', '2')
+INSERT INTO tb_orderitem (DISCOUNT, QUANTITY, UNIT_PRICE, PRODUCT_OFFERING_ID, ORDER_ID) VALUES ('15', '3', '25', '3', '3')
+INSERT INTO tb_orderitem (DISCOUNT, QUANTITY, UNIT_PRICE, PRODUCT_OFFERING_ID, ORDER_ID) VALUES ('10', '4', '30', '4', '4')
+INSERT INTO tb_orderitem (DISCOUNT, QUANTITY, UNIT_PRICE, PRODUCT_OFFERING_ID, ORDER_ID) VALUES ('5', '5', '40', '5', '5')
+INSERT INTO tb_orderitem (DISCOUNT, QUANTITY, UNIT_PRICE, PRODUCT_OFFERING_ID, ORDER_ID) VALUES ('75', '6', '60', '6', '6')
+
+BEGIN
+  FOR item IN (select discount, quantity, unit_price from tb_orderitem where total_price IS NULL)
+  LOOP
+    update tb_orderitem set total_price = quantity * unit_price * (1-discount/100);
+  END LOOP;
+END;
